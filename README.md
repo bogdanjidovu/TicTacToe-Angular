@@ -1,6 +1,6 @@
 # TicTacToe-Angular
 
-A simple X and 0 game. Can be improved in the near future by adding multiple mini games and creating a library full of mini games created in Angular.
+A simple Tic Tac Toe game. Can be improved in the near future by adding multiple mini games and creating a library full of mini games created in Angular.
 
 ## Project screenshots
 
