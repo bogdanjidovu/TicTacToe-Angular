@@ -1,15 +1,29 @@
 <div class="primary">
-  <h1 *ngIf="!winner">Current Player: {{ player }}</h1>
+  <div class="top">
+    <button (click)="newGame()">START</button>
 
-  <button (click)="newGame()">Start new Game</button>
+    <div class="topDown">
+      <h1 class="currentPlayer" *ngIf="!winner">
+        Current Player: {{ player }}
+      </h1>
 
-  <h2 *ngIf="winner">Player {{ winner }} won the game!</h2>
+      <h1 class="won" *ngIf="winner">{{ winner }} won!</h1>
+    </div>
+  </div>
 
-  <main>
+  <main class="liveGame" *ngIf="!winner">
     <app-square
       *ngFor="let val of squares; let i = index"
       [value]="val"
       (click)="makeMove(i)"
+      [class.classX]="val == 'X'"
+    >
+    </app-square>
+  </main>
+  <main class="endedGame" *ngIf="winner">
+    <app-square
+      *ngFor="let val of squares; let i = index"
+      [value]="val"
       [class.classX]="val == 'X'"
     >
     </app-square>

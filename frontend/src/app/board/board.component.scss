@@ -1,21 +1,86 @@
 main {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 0px;
+  justify-content: center;
 }
 
 app-square {
-  border: 2px gray solid;
+  border: 2px #262626 solid;
   height: 200px;
 }
 
 button {
-  height: 2rem;
-  width: auto;
-  background-color: rgb(15, 62, 128);
-  border-radius: 3rem;
-  margin-bottom: 2rem;
-  border-width: 0;
-  color: rgb(173, 179, 164);
+  width: 10em;
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
   cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  align-self: center;
+  justify-self: center;
+}
+
+button:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+button:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+.primary {
+  margin: auto;
+  width: 85%;
+  align-content: center;
+  border: 1px red;
+}
+
+.top {
+  padding-top: 5vh;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.currentPlayer {
+  color: #0078d0;
+}
+
+.won {
+  color: #0078d0;
+  font-size: 4em;
+  margin: 0;
+}
+
+.topDown {
+  height: 8em;
+  margin-top: 2em;
+  margin-bottom: 0;
 }

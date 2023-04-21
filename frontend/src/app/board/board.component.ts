@@ -34,8 +34,8 @@ export class BoardComponent implements OnInit {
 
     this.winner = this.calculateWinner();
     if (this.winner === 'X' || this.winner === 'O') {
-      alert(this.winner + ' won');
-      this.newGame();
+      // alert(this.winner + ' won');
+      // this.newGame();
     }
   }
 
