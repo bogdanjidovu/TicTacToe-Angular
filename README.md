@@ -4,8 +4,11 @@ A simple Tic Tac Toe game. Can be improved in the near future by adding multiple
 
 ## Project screenshots
 
-Game interface
-![After adding some tasks](/frontend/src/assets/images/readme1.jpg?raw=true "Game interface")
+Start of the game
+![After adding some tasks](/frontend/src/assets/images/readme1.jpg?raw=true "Start of the game")
+
+End of a game
+![After adding some tasks](/frontend/src/assets/images/readme1.jpg?raw=true "End of a game")
 
 ## Start application
 
