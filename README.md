@@ -8,7 +8,7 @@ Start of the game
 ![After adding some tasks](/frontend/src/assets/images/readme1.jpg?raw=true "Start of the game")
 
 End of a game
-![After adding some tasks](/frontend/src/assets/images/readme1.jpg?raw=true "End of a game")
+![After adding some tasks](/frontend/src/assets/images/readme2.jpg?raw=true "End of a game")
 
 ## Start application
 
