@@ -45,8 +45,11 @@ export class BoardComponent implements OnInit {
     if (this.winner === 'P1') {
       return 'P1';
     }
+    if (this.winner === 'P2') {
+      return 'P2';
+    }
 
-    return 'P2';
+    return '';
   }
 
   makeMove(idx: number) {
@@ -57,7 +60,7 @@ export class BoardComponent implements OnInit {
 
     this.winner = this.calculateWinner();
     if (this.winner === 'X') {
-      if (this.player1Or2 == 'P1') {
+      if (this.round % 2 === 1) {
         this.player1++;
         this.winner = 'P1';
       } else {
@@ -65,7 +68,7 @@ export class BoardComponent implements OnInit {
         this.winner = 'P2';
       }
     } else if (this.winner === 'O') {
-      if (this.round % 2 === 1) {
+      if (this.round % 2 === 0) {
         this.player1++;
         this.winner = 'P1';
       } else {
