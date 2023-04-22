@@ -1,13 +1,24 @@
 <div class="primary">
+  <div class="score">
+    <div class="scoreX">
+      <h1>P1</h1>
+      <h1>{{ player1 }}</h1>
+    </div>
+    <div class="score0">
+      <h1>P2</h1>
+      <h1>{{ player2 }}</h1>
+    </div>
+  </div>
   <div class="top">
     <button (click)="newGame()">START</button>
 
     <div class="topDown">
+      <h1 class="currentPlayer" *ngIf="!winner">{{ player1Or2 }} is X</h1>
       <h1 class="currentPlayer" *ngIf="!winner">
         Current Player: {{ player }}
       </h1>
 
-      <h1 class="won" *ngIf="winner">{{ winner }} won!</h1>
+      <h1 class="won" *ngIf="winner">{{ playerWin }} won!</h1>
     </div>
   </div>
 

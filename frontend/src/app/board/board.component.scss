@@ -7,7 +7,7 @@ main {
 
 app-square {
   border: 2px #262626 solid;
-  height: 200px;
+  height: 150px;
 }
 
 button {
@@ -63,7 +63,7 @@ button:hover {
 }
 
 .top {
-  padding-top: 5vh;
+  padding-top: 0;
   display: grid;
   justify-content: center;
   margin-bottom: 0;
@@ -71,6 +71,8 @@ button:hover {
 
 .currentPlayer {
   color: #0078d0;
+  text-align: center;
+  font-size: x-large;
 }
 
 .won {
@@ -80,7 +82,24 @@ button:hover {
 }
 
 .topDown {
+  margin-top: 0.5em;
   height: 8em;
-  margin-top: 2em;
   margin-bottom: 0;
+}
+
+.score {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+}
+
+.scoreX {
+  text-align: right;
+  padding-right: 20px;
+  color: #0078d0;
+}
+
+.score0 {
+  padding-left: 20px;
+  color: #0078d0;
 }

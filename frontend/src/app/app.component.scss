@@ -1,4 +1,10 @@
 .primary {
   margin: auto;
-  width: 75%;
+  width: 35%;
+}
+
+@media (max-width: 1100px) {
+  .primary {
+    width: 50%;
+  }
 }
