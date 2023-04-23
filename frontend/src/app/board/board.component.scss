@@ -104,6 +104,13 @@ button:hover {
   color: #0078d0;
 }
 
+button,
+button:focus,
+button:active {
+  outline: none;
+  touch-action: none;
+}
+
 @media (max-width: 700px) {
   .primary {
     width: 70%;

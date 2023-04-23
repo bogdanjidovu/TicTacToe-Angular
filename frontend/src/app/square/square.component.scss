@@ -15,6 +15,13 @@ button {
   color: rgb(12, 15, 231);
 }
 
+button,
+button:focus,
+button:active {
+  outline: none;
+  touch-action: none;
+}
+
 @media (max-width: 700px) {
   button {
     font-size: 3.5em !important;
