@@ -14,3 +14,9 @@ button {
 .classO {
   color: rgb(12, 15, 231);
 }
+
+@media (max-width: 500px) {
+  button {
+    font-size: 3.5em !important;
+  }
+}

@@ -103,3 +103,31 @@ button:hover {
   padding-left: 20px;
   color: #0078d0;
 }
+
+@media (max-width: 500px) {
+  .primary {
+    width: 70%;
+  }
+
+  app-square {
+    height: 100px;
+  }
+
+  button {
+    width: 8em;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .currentPlayer {
+    font-size: large;
+  }
+
+  .won {
+    font-size: 3em;
+  }
+
+  .topDown {
+    height: 6em;
+  }
+}
